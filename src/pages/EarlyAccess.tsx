@@ -18,7 +18,7 @@ const EarlyAccess = () => {
   const accessMethods = [
     {
       title: "Discord",
-      description: "Join our community",
+      description: "Limitless Community",
       icon: MessageCircle,
       link: "https://discord.gg/wEp3Uwqf",
       backgroundImage: "/img/discord.jpeg",
@@ -26,7 +26,7 @@ const EarlyAccess = () => {
     },
     {
       title: "WhatsApp",
-      description: "Quick access",
+      description: "Direct Access to the Team",
       icon: Users,
       link: "https://chat.whatsapp.com/Cg7OrlO6Vjk482Sc1yDClQ",
       backgroundImage: "/img/whatsapp.jpeg",
@@ -54,20 +54,21 @@ const EarlyAccess = () => {
               <span className="text-gradient animate-glow">Get Early Access</span>
             </h1>
             <p className="text-gray-300 text-base sm:text-lg lg:text-xl max-w-xs sm:max-w-lg md:max-w-2xl mx-auto leading-relaxed px-2">
-              Choose your path to join the future of digital assistance.
+              Choose your path to join the future of digital renaissance.
             </p>
           </div>
 
           {/* Responsive Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
             {accessMethods.map((method, index) => {
               const IconComponent = method.icon;
               return (
                 <div
                   key={method.title}
                   className={cn(
-                    "group relative overflow-hidden rounded-2xl sm:rounded-3xl transition-all duration-500 hover:scale-[1.02] cursor-pointer",
-                    "h-64 sm:h-72 md:h-80 w-full max-w-sm mx-auto md:max-w-none",
+                    "group relative overflow-hidden rounded-2xl sm:rounded-3xl transition-all duration-500 hover:scale-[1.04] cursor-pointer",
+                    "h-72 sm:h-80 md:h-80 md:w-80 w-full max-w-[600px] mx-auto",
                     `transition-all duration-600 ease-out ${
                       isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                     }`
@@ -128,7 +129,7 @@ const EarlyAccess = () => {
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-black/20 backdrop-blur-sm border border-white/10">
               <Shield className="h-4 w-4 text-neon-uranianBlue" />
               <span className="text-xs sm:text-sm text-gray-300">
-                Enterprise-grade security
+                Let's build the future together ! 
               </span>
             </div>
           </div>

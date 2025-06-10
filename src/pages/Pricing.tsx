@@ -36,6 +36,7 @@ const Pricing = () => {
         "Windows desktop app",
       ],
       cta: "Get Started Free",
+      ctaUrl: "/early-access",
     },
     {
       name: "Pro",
@@ -56,6 +57,7 @@ const Pricing = () => {
         "Email Writing with subject and body",
       ],
       cta: "Start Pro Trial",
+      ctaUrl: "https://docs.google.com/forms/d/e/1FAIpQLSf1NsRAisEQdsZPgR2QE6F-iQBJ1F913MZEuKRO4nrrFDg9Hw/viewform?usp=header",
       popular: true,
     },
   ];

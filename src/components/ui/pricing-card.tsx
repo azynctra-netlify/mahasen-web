@@ -1,6 +1,7 @@
 import * as React from "react"
 import { BadgeCheck, ArrowRight } from "lucide-react"
 import NumberFlow from "@number-flow/react"
+import { Link } from "react-router-dom"
 
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
@@ -15,6 +16,7 @@ export interface PricingTier {
   description: string
   features: string[]
   cta: string
+  ctaUrl?: string
   highlighted?: boolean
   popular?: boolean
 }
@@ -30,9 +32,63 @@ export function PricingCard({ tier, paymentFrequency }: PricingCardProps) {
   const isPopular = tier.popular
   const isProTier = tier.name.toLowerCase().includes('pro')
 
+  // Helper function to check if URL is external
+  const isExternalUrl = (url: string) => {
+    return url.startsWith('http') || url.startsWith('mailto:')
+  }
+
   // Render the glow button for Pro tier
   const renderButton = () => {
+    const buttonContent = (
+      <>
+        {tier.cta}
+        <ArrowRight className="h-4 w-4" />
+      </>
+    )
+
     if (isProTier && tier.cta.toLowerCase().includes('trial')) {
+      if (tier.ctaUrl) {
+        if (isExternalUrl(tier.ctaUrl)) {
+          return (
+            <div className="relative w-full">
+              <GlowEffect
+                colors={['#FF5733', '#33FF57', '#3357FF', '#F1C40F']}
+                mode="colorShift"
+                blur="soft"
+                duration={3}
+                scale={0.9}
+              />
+              <a 
+                href={tier.ctaUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative w-full inline-flex items-center justify-center gap-2 rounded-md bg-white px-4 py-3 text-sm font-medium text-zinc-950 transition-all hover:bg-zinc-100"
+              >
+                {buttonContent}
+              </a>
+            </div>
+          )
+        } else {
+          return (
+            <div className="relative w-full">
+              <GlowEffect
+                colors={['#FF5733', '#33FF57', '#3357FF', '#F1C40F']}
+                mode="colorShift"
+                blur="soft"
+                duration={3}
+                scale={0.9}
+              />
+              <Link 
+                to={tier.ctaUrl}
+                className="relative w-full inline-flex items-center justify-center gap-2 rounded-md bg-white px-4 py-3 text-sm font-medium text-zinc-950 transition-all hover:bg-zinc-100"
+              >
+                {buttonContent}
+              </Link>
+            </div>
+          )
+        }
+      }
+
       return (
         <div className="relative w-full">
           <GlowEffect
@@ -42,12 +98,42 @@ export function PricingCard({ tier, paymentFrequency }: PricingCardProps) {
             duration={3}
             scale={0.9}
           />
-          <button className="relative w-full inline-flex items-center justify-center gap-2 rounded-md bg-white px-4 py-3 text-sm font-medium text-zinc-950 otransition-all hover:bg-zinc-100">
-            {tier.cta}
-            <ArrowRight className="h-4 w-4" />
+          <button className="relative w-full inline-flex items-center justify-center gap-2 rounded-md bg-white px-4 py-3 text-sm font-medium text-zinc-950 transition-all hover:bg-zinc-100">
+            {buttonContent}
           </button>
         </div>
       )
+    }
+
+    if (tier.ctaUrl) {
+      if (isExternalUrl(tier.ctaUrl)) {
+        return (
+          <a
+            href={tier.ctaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
+            <Button
+              variant={isHighlighted ? "secondary" : "default"}
+              className="w-full"
+            >
+              {buttonContent}
+            </Button>
+          </a>
+        )
+      } else {
+        return (
+          <Link to={tier.ctaUrl} className="w-full">
+            <Button
+              variant={isHighlighted ? "secondary" : "default"}
+              className="w-full"
+            >
+              {buttonContent}
+            </Button>
+          </Link>
+        )
+      }
     }
 
     return (
@@ -55,8 +141,7 @@ export function PricingCard({ tier, paymentFrequency }: PricingCardProps) {
         variant={isHighlighted ? "secondary" : "default"}
         className="w-full"
       >
-        {tier.cta}
-        <ArrowRight className="ml-2 h-4 w-4" />
+        {buttonContent}
       </Button>
     )
   }
