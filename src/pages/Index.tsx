@@ -75,8 +75,9 @@ const VideoPlayerDemo = () => {
             }`}
           >
             <Quote
-              content="What we do echos in eternity."
-              author="Geethika Isuru"
+              content='"Innovation should free us from complexity, not create it. 
+              We are trying to build that world.💫"'
+              author="Leadership Message"
               delay={200}
             />
           </div>
