@@ -20,7 +20,7 @@ const RefundPolicy = () => {
           
           <div className="bg-black/20 backdrop-blur-sm border border-gray-800 rounded-lg p-8 space-y-8">
             <p className="text-gray-300 text-center">
-              <strong>Last updated: January 13, 2025</strong>
+              <strong>Last updated: June 21, 2025</strong>
             </p>
             
             <div className="space-y-6">
