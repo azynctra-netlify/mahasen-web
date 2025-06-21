@@ -41,6 +41,7 @@ const Footer = ({ className }: FooterProps) => {
             <div className="space-y-2 mb-4 sm:mb-6">
               <div><Link to="/privacy-policy" className="text-gray-400 hover:text-neon-uranianBlue transition-colors duration-300 text-sm">Privacy Policy</Link></div>
               <div><Link to="/terms-conditions" className="text-gray-400 hover:text-neon-uranianBlue transition-colors duration-300 text-sm">Terms & Conditions</Link></div>
+              <div><Link to="/refund-policy" className="text-gray-400 hover:text-neon-uranianBlue transition-colors duration-300 text-sm">Refund Policy</Link></div>
             </div>
             
             <div className="flex gap-3 sm:gap-4 mt-4 justify-center sm:justify-start">

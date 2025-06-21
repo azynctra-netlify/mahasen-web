@@ -20,179 +20,209 @@ const PrivacyPolicy = () => {
           
           <div className="bg-black/20 backdrop-blur-sm border border-gray-800 rounded-lg p-8 space-y-8">
             <p className="text-gray-300 text-center">
-              <strong>Last Updated: June 10, 2025</strong>
+              <strong>Last updated: January 13, 2025</strong>
             </p>
             
             <div className="space-y-6">
               <p className="text-gray-300 leading-relaxed">
-                At Azynctra ("we," "our," or "us"), we take your privacy seriously. This Privacy Policy explains how Mahasen AI collects, uses, and protects your information.
+                Mahasen Voice ("we," "our," or "the software") is committed to protecting the privacy of our users. This Privacy Policy explains how we collect, use, store, and share information when you use our AI-powered voice recognition software.
               </p>
               
               <div className="space-y-4">
                 <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                  Information We Collect
+                  1. Information We Collect
                 </h2>
+                
+                <p className="text-gray-300 leading-relaxed">
+                  We collect the following types of data:
+                </p>
                 
                 <div className="space-y-4">
                   <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                    Voice Data and Transcriptions
+                    1.1 Local Data
                   </h3>
                   
+                  <p className="text-gray-300 leading-relaxed">
+                    When you use our software, we store locally on your device:
+                  </p>
+                  
+                  <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                    <li>• <strong>Voice recordings</strong>: Temporarily captured during voice recognition sessions</li>
+                    <li>• <strong>Transcribed text</strong>: Converted speech-to-text results</li>
+                    <li>• <strong>Conversation history</strong>: Text content and timestamps</li>
+                    <li>• <strong>Application context</strong>: Window titles and application names where text is inserted</li>
+                    <li>• <strong>Usage analytics</strong>: Performance metrics and feature utilization</li>
+                    <li>• <strong>Settings</strong>: User preferences and configuration</li>
+                  </ul>
+                  
+                  <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
+                    1.2 Data Transmitted to Third Parties
+                  </h3>
+                  
+                  <p className="text-gray-300 leading-relaxed">
+                    We integrate with the following AI services for processing:
+                  </p>
+                  
                   <div className="space-y-4 pl-4">
-                    <p className="text-gray-300 leading-relaxed">
-                      <strong>Local Processing:</strong> By default, your voice is processed locally on your device. Only the text transcription is sent to our servers for enhancement.
-                    </p>
+                    <div>
+                      <h4 className="text-neon-lapisLazuli text-glow-blue text-lg font-display tracking-wider">
+                        Groq API Integration
+                      </h4>
+                      <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                        <li>• <strong>Purpose</strong>: Speech recognition and audio transcription</li>
+                        <li>• <strong>Data Shared</strong>: Audio files for real-time processing</li>
+                        <li>• <strong>Privacy Policy</strong>: https://groq.com/privacy/</li>
+                      </ul>
+                    </div>
                     
-                    <p className="text-gray-300 leading-relaxed">
-                      <strong>Cloud Processing Option:</strong> If you choose cloud-based voice processing, your voice recordings are temporarily stored on our servers for 3 days and then automatically deleted.
-                    </p>
+                    <div>
+                      <h4 className="text-neon-lapisLazuli text-glow-blue text-lg font-display tracking-wider">
+                        Google Gemini API Integration
+                      </h4>
+                      <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                        <li>• <strong>Purpose</strong>: Text enhancement and context-aware processing</li>
+                        <li>• <strong>Data Shared</strong>: Transcribed text for improvement</li>
+                        <li>• <strong>Privacy Policy</strong>: https://ai.google.dev/terms</li>
+                      </ul>
+                    </div>
                     
-                    <p className="text-gray-300 leading-relaxed">
-                      <strong>Text Transcriptions:</strong> All text transcriptions are stored for the lifetime of your account to provide our services.
-                    </p>
-                    
-                    <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                      Gmail Data
-                    </h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      <strong>Google Ecosystem:</strong> All Gmail processing happens within Google's cloud infrastructure. Your emails never leave the Google ecosystem or reach our frontend systems.
-                    </p>
-                    <p className="text-gray-300 leading-relaxed">
-                      <strong>Email Content:</strong> We analyze your email content to provide personalized suggestions and learn your communication style.
-                    </p>
-                    
-                    <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                      API Keys
-                    </h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      <strong>Local Storage:</strong> If you provide your own API keys (such as Gemini API), these are stored locally on your device and never transmitted to our servers.
-                    </p>
+                    <div>
+                      <h4 className="text-neon-lapisLazuli text-glow-blue text-lg font-display tracking-wider">
+                        Azure Integration
+                      </h4>
+                      <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                        <li>• <strong>Purpose</strong>: Speech recognition and AI text processing</li>
+                        <li>• <strong>Data Shared</strong>: Audio files and text data for processing</li>
+                        <li>• <strong>Privacy Policy</strong>: https://privacy.microsoft.com/</li>
+                      </ul>
+                    </div>
                   </div>
+                  
+                  <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
+                    1.3 Data We Do NOT Collect
+                  </h3>
+                  <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                    <li>• Personal identification information (unless voluntarily provided)</li>
+                    <li>• Persistent audio storage on our servers</li>
+                    <li>• File contents from your device</li>
+                    <li>• Location data</li>
+                    <li>• Voice biometrics for identification</li>
+                  </ul>
                 </div>
               </div>
               
               <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                How We Use Your Information
+                2. Data Storage
               </h2>
-              <div className="space-y-4">
-                <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                  Personalization and Learning
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>"Learn from My Text" Feature:</strong> When enabled, your text transcriptions are used to train AI models specifically for your account to improve personalization.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Service Improvement:</strong> We use aggregated, anonymized data to improve our services.
-                </p>
-                
-                <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                  Voice Data Usage
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Training Restrictions:</strong> Your voice recordings are never used to train any AI models, regardless of your settings.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Processing Only:</strong> Voice data is used solely for transcription purposes.
-                </p>
-              </div>
-              
-              <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                Your Rights and Controls
-              </h2>
-              <div className="space-y-4">
-                <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                  Data Control
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Deletion Requests:</strong> You can request deletion of your stored transcriptions at any time by contacting us.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Feature Control:</strong> You can turn the "Learn from My Text" feature on or off in your account settings.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Processing Choice:</strong> You can choose between local and cloud-based voice processing.
-                </p>
-                
-                <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                  Data Retention
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Transcriptions:</strong> Stored for the lifetime of your account unless you request deletion.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Voice Recordings:</strong> Automatically deleted after 3 days when using cloud processing.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  <strong>Gmail Data:</strong> Processed within Google's ecosystem according to their data retention policies.
-                </p>
-              </div>
-              
-              <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                Data Security
-              </h2>
-              <p className="text-gray-300 leading-relaxed">
-                We implement industry-standard security measures to protect your data:
-              </p>
-              <ul className="text-gray-300 leading-relaxed">
-                <li>Encryption in transit and at rest</li>
-                <li>Secure processing within trusted cloud environments (Google Cloud)</li>
-                <li>Local storage for sensitive information like API keys</li>
-                <li>Regular security audits and updates</li>
+              <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                <li>• All collected data is securely stored locally on your device</li>
+                <li>• Audio data is transmitted to third-party APIs for real-time processing only</li>
+                <li>• We do not store your data on our servers</li>
+                <li>• Data is retained until deleted by you through the application</li>
               </ul>
               
               <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                Third-Party Services
-              </h2>
-              <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                Google Services
-              </h3>
-              <p className="text-gray-300 leading-relaxed">
-                Gmail integration operates entirely within Google's cloud infrastructure and is subject to Google's privacy policies and security standards.
-              </p>
-              
-              <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
-                AI Services
-              </h3>
-              <p className="text-gray-300 leading-relaxed">
-                When using your own API keys, you interact directly with the AI service provider, subject to the respective provider's privacy policies.
-              </p>
-              
-              <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                Data Sharing
+                3. How We Use Your Data
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                We do not sell your personal data. Your information may only be shared:
+                We use your data for the following purposes:
               </p>
-              <ul className="text-gray-300 leading-relaxed">
-                <li>When required by law</li>
-                <li>With your explicit consent</li>
+              <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                <li>• <strong>Speech Recognition</strong>: Converting voice to text using AI technologies</li>
+                <li>• <strong>Text Enhancement</strong>: Improving grammar and formatting</li>
+                <li>• <strong>Application Integration</strong>: Providing context-aware text insertion</li>
+                <li>• <strong>Analytics and Improvement</strong>: Understanding usage patterns to improve features</li>
               </ul>
               
               <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                Changes to This Policy
+                4. Sharing of Data
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on our website and updating the "Last Updated" date.
+                We do not sell or share your data with third parties, except:
+              </p>
+              <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                <li>• Data transmitted to AI service providers (Groq, Google, Azure) for processing</li>
+                <li>• These services process data in real-time without permanent storage</li>
+              </ul>
+              
+              <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
+                5. User Rights
+              </h2>
+              
+              <div className="space-y-4">
+                <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
+                  5.1 Access and Deletion
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  You have the right to:
+                </p>
+                <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                  <li>• View all locally stored data through the application</li>
+                  <li>• Delete individual conversations or all data</li>
+                  <li>• Export your conversation history</li>
+                  <li>• Control privacy and data collection preferences</li>
+                </ul>
+                
+                <h3 className="text-neon-lapisLazuli text-glow-blue text-xl font-display tracking-wider">
+                  5.2 International Rights
+                </h3>
+                <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                  <li>• <strong>GDPR Rights</strong> (EU users): Right to access, rectify, erase, restrict, and port data</li>
+                  <li>• <strong>CCPA Rights</strong> (California users): Right to know, delete, and opt-out of data sales</li>
+                </ul>
+              </div>
+              
+              <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
+                6. Security Measures
+              </h2>
+              <p className="text-gray-300 leading-relaxed">
+                We take data security seriously:
+              </p>
+              <ul className="text-gray-300 leading-relaxed space-y-2 pl-6">
+                <li>• Local data is encrypted using industry-standard security measures</li>
+                <li>• All API communications use HTTPS/TLS encryption</li>
+                <li>• Regular security updates are provided through software updates</li>
+              </ul>
+              
+              <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
+                7. International Data Transfers
+              </h2>
+              <p className="text-gray-300 leading-relaxed">
+                Data may be processed by third-party services globally. All transfers are encrypted and subject to applicable data protection laws. Groq, Azure, and Google services may process data internationally.
               </p>
               
               <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                Contact Us
+                8. Children's Privacy
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                If you have questions about this Privacy Policy or want to exercise your data rights, please contact us at:
-              </p>
-              <p className="text-gray-300 leading-relaxed">
-                <strong>Email:</strong> privacy@azynctra.com  
-              </p>
-              <p className="text-gray-300 leading-relaxed">
-                <strong>Address:</strong> Panadura, Western Province, Sri Lanka
+                The software is not intended for children under 13. We do not knowingly collect data from children.
               </p>
               
               <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
-                Your Consent
+                9. Changes to This Privacy Policy
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                By using Mahasen AI, you consent to the collection and use of your information as described in this Privacy Policy.
+                We may update this Privacy Policy from time to time. Continued use of the software after changes constitutes acceptance of the updated policy.
+              </p>
+              
+              <h2 className="text-neon-uranianBlue text-glow-cyan text-2xl font-display tracking-wider">
+                10. Contact Us
+              </h2>
+              <p className="text-gray-300 leading-relaxed">
+                For questions about this Privacy Policy or your data:
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                <strong>Email:</strong> tos@azynctra.com<br />
+                <strong>Subject Line:</strong> Privacy Policy Inquiry<br />
+                <strong>Company:</strong> Azynctra Technologies<br />
+                <strong>Location:</strong> Panadura, Western Province, Sri Lanka<br />
+                <strong>Website:</strong> mahasen.azynctra.com
+              </p>
+              
+              <hr className="border-gray-700" />
+              
+              <p className="text-gray-300 leading-relaxed text-center">
+                By using Mahasen Voice, you acknowledge that you have read and understood this Privacy Policy and agree to the collection and use of information as described herein.
               </p>
             </div>
           </div>
