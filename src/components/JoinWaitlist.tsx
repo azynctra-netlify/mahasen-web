@@ -10,8 +10,7 @@ const JoinWaitlist = ({ className }: JoinWaitlistProps) => {
   return (
     <div className={cn("text-center mb-6 sm:mb-8", className)}>
       <p className="text-gray-300 mb-6 sm:mb-8 max-w-xs sm:max-w-lg md:max-w-2xl mx-auto text-sm sm:text-base lg:text-lg leading-relaxed px-2">
-        Your digital clone. Smartly filtering the digital noise to give you only what matters.
-        Born to truly help you, instead of making life more complex.
+        Your Digital assistant that works anywhere on your computer. Saving your time with voice typing / dictating  | Just Speak.
       </p>
 
       <Link

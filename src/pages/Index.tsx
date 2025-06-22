@@ -77,7 +77,7 @@ const VideoPlayerDemo = () => {
             <Quote
               content='"Innovation should free us from complexity, not create it. 
               We are trying to build that world.💫"'
-              author="Leadership Message"
+              author="Founder's Message"
               delay={200}
             />
           </div>
@@ -93,18 +93,21 @@ const VideoPlayerDemo = () => {
             }`}
           >
             <h2 className="text-neon-uranianBlue text-glow-cyan text-xl sm:text-2xl lg:text-3xl mb-6 sm:mb-8 text-center font-display tracking-wider">
-              TODAY
+              Just Speak
             </h2>
             <div className="space-y-4 sm:space-y-6">
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg text-center sm:text-left">
-                Mahasen AI is already making your digital life easier with some powerful features. It learns about you by reading your Gmail emails, understanding your communication style and preferences. Based on what it knows about you, it can suggest personalized draft replies that sound like you wrote them. 
+                Mahasen Voice is a voice typing system that works anywhere on your computer - just hold Win + Ctrl and just speak. It will understand which application you're active in and write naturally depending on that, making typing as easy as having a conversation.
               </p>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg text-center sm:text-left">
-                For Windows users, we've built an advanced voice typing system that works anywhere on your computer - just press SHIFT + SPACE and start talking. It will understand which application you're active in and write naturally depending on that, making typing as easy as having a conversation.
+              <b># Magic Prompt:</b> <br />
+                       Go to chatgpt or any other AI tool. Just say your prompt in simple. <i>"Magic Prompt, Build me a cool website for a voice startup."</i>, and mahasen will write a perfect prompt for you. So the only thing you have to do is press enter.
               </p>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg text-center sm:text-left">
-                The best part is your voice never leave the device. Only a transcribed text is sent to the cloud. The voice typing is 4x faster than traditional typing. Save yourself, start typing with your voice today.
-              </p>
+              <b># Mahasen:</b> <br />
+                       Activate the Mahasen Assistant mode by speaking "Mahasen" at the start of your speech. You can then speak your instructions and Mahasen will write it for you.<i> "Mahasen, tell him I'll come to the meeting 20 minutes early."</i>
+              </p>              
+             
             </div>
           </div>
         </ParallaxSection>
@@ -123,13 +126,16 @@ const VideoPlayerDemo = () => {
             </h2>
             <div className="space-y-4 sm:space-y-6">
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg text-center sm:text-left">
-                We're working on expanding Mahasen AI to work on all your devices - Mac, Android, and iPhone will soon have the same intelligent voice typing features.
+                We're working on expanding Mahasen AI to work on all your devices - Mac, Android, and iPhone will soon have the same intelligent features.
               </p>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg text-center sm:text-left">
-                Soon, Mahasen will be able to send emails automatically on your behalf, handling routine responses so you never have to worry about forgetting to reply.
+                Soon, Mahasen will be able to send emails automatically, act on your behalf, handle the small stuff so you can focus on the big stuff.
               </p>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg text-center sm:text-left">
-                We're also developing smart notification management that will filter out the noise and only show you what truly matters, giving you back control over your attention and time.
+                We're also planning on developing smart notification management that will filter out the noise and only show you what truly matters, giving you back control over your attention and time.
+              </p>
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg text-center sm:text-left">
+                Our goal is simple, to make your life more simple. We're working on it so very hard
               </p>
             </div>
           </div>
